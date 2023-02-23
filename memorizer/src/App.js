@@ -1,13 +1,24 @@
 import "./App.css";
-import Hello from "./component/Hello";
-import Welcome from "./component/Welcome";
+import "./index.css";
+import DayList from "./component/DayList";
+import Header from "./component/Header";
+import Day from "./component/Day";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import EmptyPage from "./component/EmptyPage";
 
 function App() {
   return (
-    <div className="App">
-      <Hello />
-      <Welcome />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<DayList />} />
+          <Route path="/day/*" element={<EmptyPage />} />
+          <Route path="/day/:day" element={<Day />} />
+          <Route path="/*" element={<EmptyPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
