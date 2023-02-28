@@ -1,5 +1,4 @@
-import dummy from "./db/data.json";
-
+import dummy from "../db/data.json";
 import React from "react";
 import { useParams } from "react-router-dom";
 import Word from "./Word";

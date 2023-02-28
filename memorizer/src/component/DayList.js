@@ -1,5 +1,4 @@
-import dummy from "./db/data.json";
-
+import dummy from "../db/data.json";
 import React from "react";
 import { Link } from "react-router-dom";
 
