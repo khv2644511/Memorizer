@@ -13,8 +13,8 @@
       "day": 3
     },
     {
-      "day": 4,
-      "id": 4
+      "id": 4,
+      "day": 4
     }
   ],
   "words": [
@@ -23,7 +23,7 @@
       "day": 1,
       "eng": "book",
       "kor": "책",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": 3,
@@ -45,6 +45,48 @@
       "eng": "pencil",
       "kor": "연필",
       "isDone": false
+    },
+    {
+      "day": "3",
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": "3",
+      "eng": "house",
+      "kor": "집",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": "2",
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": "4",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "day": "4",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "day": "3",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 12
     }
   ]
 }
