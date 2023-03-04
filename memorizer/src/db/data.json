@@ -15,6 +15,18 @@
     {
       "day": 4,
       "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
     }
   ],
   "words": [
@@ -108,6 +120,13 @@
       "kor": "감자",
       "isDone": false,
       "id": 15
+    },
+    {
+      "day": "7",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": false,
+      "id": 16
     }
   ]
 }

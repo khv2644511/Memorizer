@@ -4,6 +4,11 @@ import useFetch from "../hooks/useFetch";
 
 export default function CreateWord() {
   const days = useFetch("http://localhost:3001/days");
+
+  const engRef = useRef(null);
+  const korRef = useRef(null);
+  const dayRef = useRef(null);
+
   const navigate = useNavigate();
 
   function onSubmit(e) {
@@ -31,10 +36,6 @@ export default function CreateWord() {
       }
     });
   }
-
-  const engRef = useRef(null);
-  const korRef = useRef(null);
-  const dayRef = useRef(null);
 
   return (
     <form onSubmit={onSubmit}>
