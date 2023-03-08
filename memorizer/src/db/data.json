@@ -19,14 +19,6 @@
     {
       "day": 5,
       "id": 5
-    },
-    {
-      "day": 6,
-      "id": 6
-    },
-    {
-      "day": 7,
-      "id": 7
     }
   ],
   "words": [
@@ -127,6 +119,27 @@
       "kor": "원숭이",
       "isDone": false,
       "id": 16
+    },
+    {
+      "day": "4",
+      "eng": "엄마",
+      "kor": "mom",
+      "isDone": false,
+      "id": 17
+    },
+    {
+      "day": "1",
+      "eng": "cup",
+      "kor": "컵",
+      "isDone": false,
+      "id": 18
+    },
+    {
+      "day": "3",
+      "eng": "phone",
+      "kor": "핸드폰",
+      "isDone": false,
+      "id": 19
     }
   ]
 }
