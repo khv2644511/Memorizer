@@ -5,8 +5,6 @@ export default function Word({ word: w }) {
   const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(word.isDone);
 
-  console.log(word);
-
   function toggleShow() {
     setIsShow((prev) => !prev);
   }
