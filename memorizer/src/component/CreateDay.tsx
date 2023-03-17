@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
@@ -6,7 +6,7 @@ export default function CreateDay() {
   const days = useFetch("http://localhost:3001/days");
   const navigate = useNavigate();
 
-  function addDay(e) {
+  function addDay(e: React.MouseEvent) {
     fetch(` http://localhost:3001/days`, {
       method: "POST",
       headers: {

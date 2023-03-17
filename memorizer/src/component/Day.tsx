@@ -1,14 +1,15 @@
+import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Word from "./Word";
+import Word, { IWord } from "./Word";
 import useFetch from "../hooks/useFetch";
 
 export default function Day() {
-  const { day } = useParams();
-  const words = useFetch(`http://localhost:3001/words?day=${day}`);
+  const { day } = useParams<{ day: string }>();
+  const words: IWord[] = useFetch(`http://localhost:3001/words?day=${day}`);
   const days = useFetch(`http://localhost:3001/days`);
   const navigate = useNavigate();
 
-  function PrevDay(e) {
+  function PrevDay() {
     if (Number(day) > 1) navigate(`/day/${Number(day) - 1}`);
   }
 
@@ -18,11 +19,7 @@ export default function Day() {
 
   return (
     <>
-      <button
-        className="prev_btn"
-        onClick={PrevDay}
-        style={{ opacity: Number(day) <= 1 ? 0.3 : 1 }}
-      >
+      <button onClick={PrevDay} style={{ opacity: Number(day) <= 1 ? 0.3 : 1 }}>
         {"<"}
       </button>
       <h2 style={{ display: "inline", padding: "0px 5px" }}>Day {day}</h2>
